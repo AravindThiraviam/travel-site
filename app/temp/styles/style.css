@@ -1142,7 +1142,7 @@ img{
             opacity: 1;
             z-index: 1;
             padding-top: 0; 
-            tansform: scale(1)
+            transform: scale(1)
     }
     }
 
