@@ -1,14 +1,15 @@
 const webpack = require('webpack');
 const path = require('path');
 
-module.exports = {
+module.exports = {    
     mode: 'development',
     entry: {
-        main: "./app/assets/scripts/app.js"
+        App: "./app/assets/scripts/app.js",
+        Vendor: "./app/assets/scripts/vendor.js"       
     },
     output: {
         path: __dirname + "/app/temp/scripts",
-        filename: "App.js"
+        filename: "[name].js"
     },
     module: {
         rules: [
