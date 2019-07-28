@@ -23,12 +23,12 @@ gulp.task('copyGeneralFiles', function() {
         './app/**/*',
         '!./app/index.html',
         '!./app/assets/images/**',
-        '!./app/assets/styles',
-        '!./app/assets/scripts',
-        '!./app/temp',
+        '!./app/assets/styles/**',
+        '!./app/assets/scripts/**',
+        '!./app/temp/',
         '!./app/temp/**'
-    ]
-    return gulp.src([pathsToCopy])
+    ];
+    return gulp.src(pathsToCopy)
     .pipe(gulp.dest("./docs"));
 });
 
@@ -52,4 +52,4 @@ gulp.task('usemin', function() {
 });
 
 
-gulp.task('build', gulp.series('deleteDistFolder', 'icons', 'optimizeImages', 'usemin', 'copyGeneralFiles'));
+gulp.task('build', gulp.series('icons', 'styletask', 'deleteDistFolder', 'optimizeImages', 'usemin', 'copyGeneralFiles'));
