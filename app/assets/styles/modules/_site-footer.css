@@ -1,4 +1,4 @@
-.site-floor {
+.site-footer {
     background-color: $mainBlue;
     color: #fff;
     padding: .5rem;
@@ -13,7 +13,7 @@
         @mixin atMedium {
             display: inline;
             margin-bottom: 0;
-            margin-riight: 1.4rem;
+            margin-right: 1.4rem;
         }
 
     }    
