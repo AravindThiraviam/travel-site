@@ -52,4 +52,4 @@ gulp.task('usemin', function() {
 });
 
 
-gulp.task('build', gulp.series('deleteDistFolder', 'optimizeImages', 'usemin', 'copyGeneralFiles'));
+gulp.task('build', gulp.series('deleteDistFolder', 'icons', 'optimizeImages', 'usemin', 'copyGeneralFiles'));
